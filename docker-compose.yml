@@ -7,8 +7,8 @@ services:
     environment:
       - HOST=0.0.0.0
     ports:
-      - "30:3000"
-    working_dir: '/app'
+      - $PORT:3000
+    working_dir: /app
     volumes:
-      - "./app:/app"
-    entrypoint: yarn dev
+      - $APP_PATH:/app
+    #entrypoint: yarn dev
