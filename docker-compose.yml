@@ -11,4 +11,5 @@ services:
     working_dir: /app
     volumes:
       - $APP_PATH:/app
-    #entrypoint: yarn dev
+      - ./init.sh:/init.sh
+    entrypoint: /bin/ash /init.sh
