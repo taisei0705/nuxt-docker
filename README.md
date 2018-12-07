@@ -1,6 +1,10 @@
-# command list
+## Preparation
 
-## First command (It takes a few minutes)
+### Write SOURCE_REPOSITORY on the .env
+
+# Command list
+
+## Container startup && source clone command (It takes a few minutes)
 	./sh up
 ## Container in
 	./sh in
