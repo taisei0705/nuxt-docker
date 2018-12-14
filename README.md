@@ -1,14 +1,20 @@
-## Preparation
+## 初期準備
 
-### Write SOURCE_REPOSITORY on the .env
+### .envにSOURCE_REPOSITORYを追加する
 
-# Command list
+# Command一覧
 
-## Container startup && source clone command (It takes a few minutes)
-	./sh up
-## Container in
-	./sh in
-## Container delete
+## Containerを起動して、ソースコードも実行済ますが、ログを出さない
+	./sh start
+## Containerを起動して、ソースコードも実行済ますが、ログを出す
+	./sh debug
+## ContainerにSSHできる
+	./sh ssh
+## Containerをストップする
+	./sh stop
+## Containerを再起動する
+	./sh restart
+## Containerをストップして、Imageを削除する
 	./sh clear
-## browser check
+## ブラウザで確認する
 	open http://localhost:30
