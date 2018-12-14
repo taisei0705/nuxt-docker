@@ -5,7 +5,7 @@ if [ $1 = "start" ]; then
 	if [ ! -e $APP_PATH ]; then
 		git clone $SOURCE_REPOSITORY $APP_PATH
 	fi
-	docker-compose up -d && docker logs -f nuxt
+	docker-compose up -d
 elif [ $1 = 'debug' ]; then
     docker-compose up
 elif [ $1 = 'ssh' ]; then
