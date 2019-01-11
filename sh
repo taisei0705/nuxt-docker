@@ -1,5 +1,4 @@
 #!/bin/bash
-APP_NAME="nuxt"
 source .env
 if [ $1 = "start" ]; then
 	if [ ! -e $APP_PATH ]; then
